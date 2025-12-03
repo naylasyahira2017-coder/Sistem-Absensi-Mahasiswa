@@ -1,10 +1,12 @@
 nama_toko = "TOKO MAKMUR JAYA"
 print(f"===== SISTEM PENDATAAN {nama_toko} =====")
 
-barang_list = [{"nama": "Mie Instan", "harga": 3000, "stok": 20},
+barang_list = [
+    {"nama": "Mie Instan", "harga": 3000, "stok": 20},
     {"nama": "Gula", "harga": 12000, "stok": 10},
     {"nama": "Beras", "harga": 50000, "stok": 5},
-    {"nama": "Teh Celup", "harga": 7000, "stok": 15}]
+    {"nama": "Teh Celup", "harga": 7000, "stok": 15},
+]
 
 def tampilkan_barang():
     print(f"\n===== DATA BARANG {nama_toko} =====")
@@ -17,7 +19,7 @@ def tampilkan_barang():
 def tambah_barang():
     print("\n=== TAMBAH BARANG ===")
     nama = input("Nama barang : ").strip()
-    harga = int(input("Harga       : "))
+    harga = int(input("Harga      : "))
     stok = int(input("Stok        : "))
     barang_list.append({"nama": nama, "harga": harga, "stok": stok})
     print("Barang berhasil ditambahkan!\n")
@@ -78,4 +80,5 @@ while True:
         break
     else:
         print("Pilihan tidak valid!\n")
+
 
